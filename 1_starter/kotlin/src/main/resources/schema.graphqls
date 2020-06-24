@@ -6,4 +6,17 @@ type Person {
 
 type Query {
   developers: [Person]
+  dishes: [Dish]
+  dish: Dish
+}
+
+type Dish {
+  id: Int
+  name: String
+  ingredients: [Ingredient]
+}
+
+type Ingredient {
+  id: Int
+  name: String
 }
